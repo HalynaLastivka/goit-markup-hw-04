@@ -8,6 +8,7 @@
     --CORNFLOWER: #e7e9fc;
     --lightislate: #8E8F99;
     --greenhover: #31D0AA;
+    --coloricon: #afb1b8;
 }
 
 
@@ -20,6 +21,7 @@
 
 .header {
     border-bottom: 1px solid var(--CORNFLOWER);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 body {
@@ -224,8 +226,8 @@ body {
 
 /*feature*/
 .features-icon {
-    width: 64px;
-    height: 64px;
+    /* width: 64px;
+    height: 64px; */
     margin-top: 24px;
     margin-bottom: 24px;
     align-items: center;
@@ -236,12 +238,15 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--color-text-footer);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    height: 112px;
 
 }
 
 .feature-title {
 
-    margin-bottom: 8px;
+
     margin-top: 8px;
 
     color: var(--akcent-color);
@@ -296,7 +301,7 @@ body {
 }
 
 .tl-ph {
-    padding: 32px 16px;
+    padding: 32px 0;
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -344,18 +349,20 @@ body {
     padding: 0;
     border: 1px solid var(--lightislate);
     border-radius: 4px;
+    color: var(--coloricon);
 
 }
 
 .cust-link:hover,
 .cust-link:focus {
-    fill: var(--hover-focus);
+    /* fill: var(--hover-focus); */
     border: 1px solid var(--hover-focus);
+    color: var(--hover-focus)
 }
 
 
 .icon-cust {
-    fill: #8E8F99;
+    fill: currentColor;
 }
 
 .icon-cust:hover,
@@ -370,6 +377,15 @@ body {
     gap: 24px;
     align-items: flex-start;
     padding: 0px;
+}
+
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.cust-title {
+    line-height: 1.1;
 }
 
 
@@ -395,7 +411,14 @@ body {
 .footer {
     padding: 100px 0;
     background-color: var(--akcent-color);
+    display: flex;
+    gap: 120px;
+    align-items: baseline;
 
+}
+
+.footinfo {
+    margin-left: 156px;
 }
 
 .footer-text {
@@ -404,11 +427,7 @@ body {
 
 }
 
-.footmain {
-    display: flex;
-    gap: 120px;
 
-}
 
 .foot-title {
     font-weight: 500;
@@ -418,7 +437,9 @@ body {
 
 .social-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
+    /* justify-content: space-between; */
     width: 208px;
     margin: 0 auto;
 
@@ -435,6 +456,11 @@ body {
     padding: 0;
 }
 
+.member .social-item:hover,
+.member .social-item:focus {
+    background-color: var(--hover-focus);
+}
+
 .social-item:hover,
 .social-item:focus {
     background-color: var(--greenhover);
@@ -442,6 +468,7 @@ body {
 
 .socisl-list-icon {
     display: block;
+    fill: var(--color-text-footer);
     /* width: 24px;
     height: 24px; */
     /* background-position: center; */
@@ -522,10 +549,14 @@ body {
     border-top: none;
 }
 
+.item-project {
+    display: block;
+}
+
 .hover-shad:hover,
 .hover-shad:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* position */
