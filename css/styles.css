@@ -439,18 +439,18 @@ body {
     margin-bottom: 16px;
 }
 
-
-.footink .social-list {
+.social-listf {
+    display: flex;
+    justify-content: center;
     gap: 16px;
-}
+    margin: 0 auto;
 
+}
 
 .social-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    /* justify-content: space-between; */
-    width: 208px;
     margin: 0 auto;
 
 }
