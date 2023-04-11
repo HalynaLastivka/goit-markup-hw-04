@@ -6,6 +6,8 @@
     --color-text-footer: #F4F4FD;
     --hover-focus: #404bbf;
     --CORNFLOWER: #e7e9fc;
+    --lightislate: #8E8F99;
+    --greenhover: #31D0AA;
 }
 
 
@@ -158,12 +160,26 @@ body {
 
 
 
+
 /*hero*/
 .hero.section {
-    padding-top: 188px;
-    padding-bottom: 188px;
+
+    background: rgba(46, 47, 66, 0.7);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("..//images/people-office.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440рх;
+    /* min-height: 600px; */
+    margin-left: auto;
+    margin-right: auto;
+
+
 
     background-color: var(--akcent-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
     margin-bottom: 0px;
 }
@@ -207,11 +223,26 @@ body {
 }
 
 /*feature*/
+.features-icon {
+    width: 64px;
+    height: 64px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    align-items: center;
+}
 
+.frame-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-text-footer);
+
+}
 
 .feature-title {
 
     margin-bottom: 8px;
+    margin-top: 8px;
 
     color: var(--akcent-color);
     font-weight: 500;
@@ -281,6 +312,8 @@ body {
 
 .member {
     background-color: var(--background-main);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .card-title {
@@ -297,7 +330,49 @@ body {
 .card-text {
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
+
+.cust-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    background-color: var(--background-main);
+    border-radius: 50%;
+    padding: 0;
+    border: 1px solid var(--lightislate);
+    border-radius: 4px;
+
+}
+
+.cust-link:hover,
+.cust-link:focus {
+    fill: var(--hover-focus);
+    border: 1px solid var(--hover-focus);
+}
+
+
+.icon-cust {
+    fill: #8E8F99;
+}
+
+.icon-cust:hover,
+.icon-cust:focus {
+    fill: var(--hover-focus);
+}
+
+
+/* customer */
+.customer-list {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+
 
 /*footer*/
 .footer-logo {
@@ -327,6 +402,49 @@ body {
     max-width: 264px;
     color: var(--color-text-footer);
 
+}
+
+.footmain {
+    display: flex;
+    gap: 120px;
+
+}
+
+.foot-title {
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 208px;
+    margin: 0 auto;
+
+}
+
+.social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-button);
+    border-radius: 50%;
+    padding: 0;
+}
+
+.social-item:hover,
+.social-item:focus {
+    background-color: var(--greenhover);
+}
+
+.socisl-list-icon {
+    display: block;
+    /* width: 24px;
+    height: 24px; */
+    /* background-position: center; */
 }
 
 
@@ -404,7 +522,11 @@ body {
     border-top: none;
 }
 
+.hover-shad:hover,
+.hover-shad:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
+}
 
 /* position */
 h1,
