@@ -439,6 +439,12 @@ body {
     margin-bottom: 16px;
 }
 
+
+.footink .social-list {
+    gap: 16px;
+}
+
+
 .social-list {
     display: flex;
     justify-content: center;
