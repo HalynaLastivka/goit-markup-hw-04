@@ -407,16 +407,22 @@ body {
 }
 
 .footer {
-    padding: 100px 0;
+    /* padding: 100px 0; */
     background-color: var(--akcent-color);
     display: flex;
     gap: 120px;
     align-items: baseline;
 
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 15px 100px 15px;
+
+
 }
 
 .footinfo {
-    margin-left: 156px;
+    padding-left: 156px;
 }
 
 .footer-text {
